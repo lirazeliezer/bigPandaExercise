@@ -1,0 +1,22 @@
+{
+  "name": "frontend-exercise-backend",
+  "version": "1.0.0",
+  "description": "Backend for Frontend Exercise",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigpandaio/frontend-exercise-backend.git"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Shahar Kedar",
+  "homepage": "https://github.com/bigpandaio/frontend-exercise-backend#readme",
+  "dependencies": {
+    "body-parser": "1.16.1",
+    "express": "4.14.1",
+    "lodash": "4.17.4",
+    "lorem-ipsum": "1.0.3",
+    "uuid": "3.0.1"
+  }
+}

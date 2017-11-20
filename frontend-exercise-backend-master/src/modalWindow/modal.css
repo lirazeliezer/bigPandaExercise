@@ -1,0 +1,53 @@
+
+.modal{
+    position:absolute;
+    z-index: 15;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    background: #e6e9e9;
+    border-radius: 12px;
+/*  center the modal  */
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.editableModalSize{
+    width: 270px;
+    height: 250px;
+}
+
+.unEditableModalSize{
+    width: 250px;
+    height: 150px;
+}
+
+header{
+    background: white;
+    height: 35px;
+    padding: 10px 10px;
+}
+
+textarea{
+    width: 200px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.modalButton{
+    width: 60px;
+    height: 35px;
+    border-radius: 10px;
+    float: right;
+    margin: 10px;
+}
+
+.modalButton.confirmationButton{
+    background: red;
+}

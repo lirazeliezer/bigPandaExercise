@@ -1,0 +1,17 @@
+<div class="modal" ng-class="{editableModalSize:isEditable,unEditableModalSize:!isEditable}" ng-show="showModal" >
+    <link rel="stylesheet" href="modalWindow/modal.css">
+    
+    <header>
+        <button class="fa fa-times iconedButton" ng-click="closeModal()"></button>
+        <span ng-class="{'fa fa-pencil':isEditable,'fa fa-trash':!isEditable}"></span>
+        <b> {{isEditable ? "Edit" : "Delete"}} </b>
+    </header>
+    <hr>
+    <section ng-show="isEditable">
+        <textarea ng-model="editedComment" placeholder="Text"></textarea>
+    </section>
+    <aside class="buttonsContainer">
+        <button class="modalButton" ng-click="closeModal()">{{isEditable ? "Cancel" : "No"}}</button>
+        <button class="modalButton confirmationButton" ng-click="confirmChanges(comment)">{{isEditable ? "Save" : "Yes"}}</button>
+    </aside>
+</div>

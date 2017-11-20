@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bpApp">
+<head title="BIg Panda">
+</head>
+<body>
+    <div ng-controller="commentsCtrl">
+        <bp-modal ng-show="showModal" show-modal="showModal" is-editable="isEditable" comment="comment"></bp-modal>
+        
+        <div ng-class="{overlay:showModal}"></div>
+
+        <h1>Big Panda's Comments list</h1>
+        <div  class="commentBox" ng-repeat="comment in commentsList">
+            <b>{{comment.email}}</b>
+            <section>{{comment.comment}}</section>
+            <aside class="buttonsContainer">
+                <button class="fa fa-pencil iconedButton" ng-click="openModal(comment,true)"></button>
+                <button class="fa fa-trash iconedButton" ng-click="openModal(comment,false)"></button>
+            </aside>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="main.js"></script> 
+    <link   rel="stylesheet" href="mainStyle.css">
+    <script src="https://use.fontawesome.com/b9c86d3498.js"></script>
+    <script src="services/webRequests.js"></script>
+    <script src="modalWindow/modalController.js"></script>
+    <script src="modalWindow/modalDirective.js"></script>
+</body>
+</html>
