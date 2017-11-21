@@ -7,7 +7,8 @@ bpApp.directive('bpModal', function () {
         scope: {
             isEditable: "=isEditable",
             comment:    "=comment",
-            showModal:  "=showModal"
+            showModal:  "=showModal",
+            commentsList: "=commentsList"
         }
     };
 });
