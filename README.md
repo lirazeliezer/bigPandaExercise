@@ -20,8 +20,4 @@ $ cd <your-app-folder>
 $ ws
 open the browser in http://localhost:8000/src/ and check the app :)
 
-important!
-* when updating a comment an Internal Server Error occurs "Comment with id .. doesnt exist"
-even though this id was pulled from the db in the get request.
-* when deleting a comment, there is no error but still nothing happens. 
-requesting the comments afterwords returns all the comments including the deleted one.
+
