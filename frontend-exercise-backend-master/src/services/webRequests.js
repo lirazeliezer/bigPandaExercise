@@ -19,6 +19,6 @@ bpApp.service('webRequestService', function ($http){
 
 bpApp.constant('webRequestUrl', {
     getUrl: "http://localhost:3000/comments",
-    deleteUrl: "http://localhost:3000/comments/:",
-    putUrl: "http://localhost:3000/comments/:"
+    deleteUrl: "http://localhost:3000/comments/",
+    putUrl: "http://localhost:3000/comments/"
 });
